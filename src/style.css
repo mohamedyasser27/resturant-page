@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --navbar: 20;
+}
 html {
   box-sizing: border-box;
 }
@@ -12,23 +16,48 @@ html {
   margin: 0;
   padding: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1c1c1c;
-    color: #e6e6e6;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  min-height: 100vh;
 }
 
-div {
-  background-color: red;
-  width: 100px;
-  height: 100px;
+.Navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(var(--navbar), var(--navbar), var(--navbar), 0.6);
+}
+
+.Navbar li {
+  list-style-type: none;
+}
+.Navbar li ul {
+  display: inline-block;
+  margin-left: 2%;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 5ms;
+  transition-timing-function: ease-in-out;
+}
+.Navbar li ul:hover {
+  color: red;
+  transform: translateY(-2px);
+}
+
+.Main {
+  height: 90%;
+  width: 100%;
 }
