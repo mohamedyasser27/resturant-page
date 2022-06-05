@@ -22,14 +22,36 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-image: url("../assets/background.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   font-family: "Bebas Neue", cursive;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+.Container {
+  background-color: rgba(var(--navbar), var(--navbar), var(--navbar), 0.6);
+  width: 50vw;
+  height: 38vw;
+  min-height: 60%;
+}
+.Container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
 }
 
 .Navbar {
@@ -49,15 +71,10 @@ body {
   margin-left: 2%;
   font-size: 3rem;
   cursor: pointer;
-  transition: transform 5ms;
+  transition: transform 10ms;
   transition-timing-function: ease-in-out;
 }
 .Navbar li ul:hover {
   color: red;
   transform: translateY(-2px);
-}
-
-.Main {
-  height: 90%;
-  width: 100%;
 }

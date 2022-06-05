@@ -1,5 +1,15 @@
-.ContactUs {
-  background-color: green;
-  width: 100px;
-  height: 100px;
+:root {
+  --navbar: 20;
+}
+
+.ContactUs:after,
+.ContactUs:before {
+  font-size: 3rem;
+}
+.ContactUs:before {
+  content: "Our Email:SmashBurger@yahoo.com";
+}
+
+.ContactUs:after {
+  content: "Our phone Number:07775000";
 }

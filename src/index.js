@@ -8,19 +8,23 @@ import contactUsModule from "./contactUs/contactUs.js";
 
 const ControlNavigation = (function () {
   let navBarButtons = loadElementsIntoArray(".Navbar li ul");
-  let main = document.querySelector(".Main");
+  let container = document.querySelector(".Container");
+  container.appendChild(homeModule());
   navBarButtons.forEach((btn) => {
     btn.addEventListener("click", (event) => {
-      main.innerHTML = "";
-      switch (event.target.id) {
-        case "home":
-          main.appendChild(homeModule());
-          break;
-        case "menu":
-          main.appendChild(menuModule());
-          break;
-        case "contactUs":
-          main.appendChild(contactUsModule());
+      console.log(container.firstChild);
+      if (event.target.id != container.classList[0]) {
+        container.innerHTML = "";
+        switch (event.target.id) {
+          case "home":
+            container.appendChild(homeModule());
+            break;
+          case "menu":
+            container.appendChild(menuModule());
+            break;
+          case "contactUs":
+            container.appendChild(contactUsModule());
+        }
       }
     });
   });

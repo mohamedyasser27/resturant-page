@@ -1,5 +1,19 @@
-.Menu {
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+:root {
+  --navbar: 20;
+}
+.BurgerContainer {
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.BurgerContainer img {
+  width: 100%;
+  min-width: 50%;
+}
+
+.BurgerContainer p {
+  font-size: 1vw;
+  margin-top: 1%;
 }
