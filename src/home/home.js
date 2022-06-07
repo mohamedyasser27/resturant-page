@@ -1,6 +1,7 @@
 import { toggleClass } from "../resuable.js";
 import "./home.css";
 import chefImg from "./assets/chef.jpg";
+
 function homeModule() {
   let home = document.createElement("div");
   toggleClass("Home", home);

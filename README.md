@@ -21,7 +21,7 @@ This is a project i built for the odin project foundation path.
 
 ## Future Goals
 
-- [ ] make site responsive
+- [x] make site responsive
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

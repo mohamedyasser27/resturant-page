@@ -1,19 +1,28 @@
 :root {
   --navbar: 20;
 }
+
 .BurgerContainer {
-  margin-bottom: 3%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  max-width: 40%;
 }
 .BurgerContainer img {
-  width: 100%;
-  min-width: 50%;
+  max-width: 100%;
 }
 
 .BurgerContainer p {
   font-size: 1vw;
   margin-top: 1%;
+}
+.Menu {
+  gap: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 48px;
 }

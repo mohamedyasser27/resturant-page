@@ -2,19 +2,24 @@
   --navbar: 20;
 }
 
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .Home:before {
   content: "Best Burger in town";
-  font-size: 2.5vw;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  font-size: calc(2rem + 0.5vw);
+  margin-bottom: 48px;
 }
 .Home:after {
   content: "Order Now";
-  font-size: 2vw;
-  margin-top: 4%;
+  font-size: calc(2rem + 0.5vw);
+  margin-top: 48px;
 }
 .Chef {
-  width: 60%;
-  height: 60%;
   border-radius: 100%;
+  max-width: 80%;
 }
